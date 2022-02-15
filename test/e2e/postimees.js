@@ -22,17 +22,16 @@ module.exports = {
     .setValue("html.theme-postimees.device-desktop.country-ee body.section-81.digipakett-branding-visible.digipakett-branding-visible--new-account.body--fullscreen-open div.search-overlay.modal.modal--fullscreen div.search-overlay__content.flex.flex--direction-column.flex--align-items-center.flex--justify-content-center form.search-overlay-form.flex.flex--align-items-center input.search-overlay-form__input.flex--equal-width", "koroona")
     .click("html.theme-postimees.device-desktop.country-ee body.section-81.digipakett-branding-visible.digipakett-branding-visible--new-account.body--fullscreen-open div.search-overlay.modal.modal--fullscreen div.search-overlay__content.flex.flex--direction-column.flex--align-items-center.flex--justify-content-center form.search-overlay-form.flex.flex--align-items-center button.search-overlay-form__submit.flex.flex--align-items-center")
     .assert.title("koroona - Otsing - Postimees: Värsked uudised Eestist ja välismaalt")
-    .saveScreenshot(`${config.imgpath(browser)}otsing.png`); 
+    .saveScreenshot(`${config.imgpath(browser)}otsing.png`);
 
     browser
     .click("div.menu-items:nth-child(3) > div:nth-child(1) > a:nth-child(1)")
     .assert.title("Koroonaviirus - Tervis")
-    .saveScreenshot(`${config.imgpath(browser)}Koroonaviirus-Tervis.png`); 
+    .saveScreenshot(`${config.imgpath(browser)}Koroonaviirus-Tervis.png`);
 
     browser
     .click("a.menu-item--btn:nth-child(1)")
     .assert.title("Postimees: Värsked uudised Eestist ja välismaalt")
-    .saveScreenshot(`${config.imgpath(browser)}Tagasi-Avalehele.png`); 
-
+    .saveScreenshot(`${config.imgpath(browser)}Tagasi-Avalehele.png`);
   },
 };
